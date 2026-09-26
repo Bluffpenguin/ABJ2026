@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         linearVelocity = rb.linearVelocity;
         angularVelocity = rb.angularVelocity;
 
-        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -15f, 15f);
+        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -10f, 10f);
 	}
 
     void PerformMovement()
@@ -99,7 +99,8 @@ public class PlayerController : MonoBehaviour
 			}
             
 		}
-		
+        else rb.AddForce(moveDirection * moveForce / 5, ForceMode2D.Force); // Slight force to get past obstacles
+
 	}
 
     void HandleJump()
