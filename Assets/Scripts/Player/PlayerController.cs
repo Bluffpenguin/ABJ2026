@@ -25,8 +25,7 @@ public class PlayerController : MonoBehaviour
     [Header("Costs")]
     [SerializeField] int walkCost = 1;
     [SerializeField] int baseJumpCost = 10;
-    [SerializeField] float multiJumpModifier = 2;
-    [SerializeField] int currentJumpCost;
+    //[SerializeField] int jumpCostMultiplier = 2;
     [SerializeField] int currentJumpCount = 0; // Amount of jumps the player has performed before landing
     [SerializeField] float walkCostInterval = 0.25f;
     [SerializeField] float damageInvulnerabilityPeriod = 0.5f;
@@ -35,6 +34,7 @@ public class PlayerController : MonoBehaviour
     bool invulnerable = false;
 
 	Rigidbody2D rb;
+    Animator anim;
 	bool playerCanMove = true;
 
     [Header("For Monitoring")]
@@ -50,13 +50,14 @@ public class PlayerController : MonoBehaviour
 
         input_A = InputSystem.actions.FindAction("A");
         input_B = InputSystem.actions.FindAction("B");
-        rb = GetComponent<Rigidbody2D>();
+        
 	}
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
     {
-        
-    }
+		rb = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+	}
 
     // Update is called once per frame
     void Update()
@@ -121,11 +122,14 @@ public class PlayerController : MonoBehaviour
             if (!grounded) currentJumpCount = 0;
 
             grounded = true;
+            anim.SetBool("IsGrounded", true);
+            
         }
         else
         {
             // Player is not touching the ground
             grounded = false;
+            anim.SetBool("IsGrounded", false);
             intervalProgress = 0;
 
         }
@@ -143,6 +147,18 @@ public class PlayerController : MonoBehaviour
             invulnerabilityProgress = 0;
         }
     }
+
+    public void ResetPlayer(Vector2 startPosition)
+    {
+		rb.linearVelocity = Vector2.zero;
+		rb.angularVelocity = 0f;
+        intervalProgress = 0;
+        invulnerabilityProgress = 0;
+        currentJumpCount = 0;
+        invulnerable = false;
+
+        transform.position = startPosition;
+	}
 
 	#region Damage Methods
     public void DamageWithForce(float force, Transform deliver, int cost)
