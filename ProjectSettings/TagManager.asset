@@ -41,5 +41,45 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 682572341
+    locked: 0
+  - name: Background
+    uniqueID: 3049148823
+    locked: 0
+  - name: Player
+    uniqueID: 3553173727
+    locked: 0
+  - name: Foreground
+    uniqueID: 3689283841
+    locked: 0
+  - name: 
+    uniqueID: 3006598645
+    locked: 0
+  - name: 
+    uniqueID: 4105323467
+    locked: 0
+  - name: 
+    uniqueID: 265515893
+    locked: 0
+  - name: 
+    uniqueID: 477702011
+    locked: 0
+  - name: 
+    uniqueID: 3857895813
+    locked: 0
+  - name: 
+    uniqueID: 2816356283
+    locked: 0
+  - name: 
+    uniqueID: 3838814083
+    locked: 0
+  - name: 
+    uniqueID: 354904195
+    locked: 0
+  - name: 
+    uniqueID: 347564035
+    locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []

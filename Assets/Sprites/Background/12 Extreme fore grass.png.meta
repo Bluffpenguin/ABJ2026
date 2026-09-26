@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2cab8e7b34a3ce54f9e4afd4034f1118
+guid: 993fc56c72c74a0498062442a1a6d12d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3338749442709606003
-    second: Coin_0
+      213: 6135401790226655901
+    second: 12 Extreme fore grass_0
+  - first:
+      213: 6037182634049421507
+    second: 12 Extreme fore grass_1
+  - first:
+      213: 1218369636260695582
+    second: 12 Extreme fore grass_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2048
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coin_0
+      name: 12 Extreme fore grass_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 285
         y: 0
-        width: 2048
-        height: 2048
+        width: 284
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +136,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d81b24142116aa1d0800000000000000
-      internalID: -3338749442709606003
+      spriteID: d9a61c4eb63552550800000000000000
+      internalID: 6135401790226655901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12 Extreme fore grass_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 585
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c04caa8e9168c350800000000000000
+      internalID: 6037182634049421507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12 Extreme fore grass_2
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 3705
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ec07e9ab488e010800000000000000
+      internalID: 1218369636260695582
       vertices: []
       indices: 
       edges: []
@@ -150,7 +200,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Coin_0: -3338749442709606003
+      12 Extreme fore grass_0: 6135401790226655901
+      12 Extreme fore grass_1: 6037182634049421507
+      12 Extreme fore grass_2: 1218369636260695582
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
