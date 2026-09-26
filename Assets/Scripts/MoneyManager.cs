@@ -12,6 +12,7 @@ public class MoneyManager : MonoBehaviour
     public VisualTreeAsset template;
     [SerializeField] UIDocument uiMoneyPopups;
     VisualElement costFadeContainer;
+    Label currentMoneyLabel;
     int containerSize = 0;
     int maxContainerSize = 10;
 
@@ -32,6 +33,7 @@ public class MoneyManager : MonoBehaviour
 	void Start()
     {
         costFadeContainer = uiMoneyPopups.rootVisualElement.Q("CostFade");
+        currentMoneyLabel = uiMoneyPopups.rootVisualElement.Q<Label>("Money");
 
 	}
 
@@ -86,19 +88,28 @@ public class MoneyManager : MonoBehaviour
     public void ResetMoney()
     {
         currentMoney = startingMoney;
-    }
+		currentMoneyLabel.text = "$" + currentMoney;
+        costFadeContainer.Clear();
+        containerSize = 0;
+	}
 
     public void SubtractMoney(int amount)
     {
         currentMoney -= amount;
-        SpawnPopup(-amount);
+		currentMoneyLabel.text = "$" + currentMoney;
+
+		SpawnPopup(-amount);
 
         if (currentMoney <= 0) GameManager.Instance.OnLose();
+
+        
     }
 
     public void AddMoney(int amount)
     {
         currentMoney += amount;
-        SpawnPopup(amount);
+		currentMoneyLabel.text = "$" + currentMoney;
+
+		SpawnPopup(amount);
     }
 }
