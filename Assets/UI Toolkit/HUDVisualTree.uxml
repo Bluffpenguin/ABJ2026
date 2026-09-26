@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ui:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ui="UnityEngine.UIElements"
-    xmlns:uie="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
->
-    
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/New%20USS.uss?fileID=7433441132597879392&amp;guid=40f22282c5efa0e41aecb658f0a2ff93&amp;type=3#New USS"/>
+    <ui:Label text="$MONEY" name="Money" style="aspect-ratio: auto; width: 280px; height: 80px; font-size: 40px; -unity-text-align: middle-left; padding-left: 24px; background-color: rgba(255, 255, 255, 0); color: rgb(6, 118, 17); -unity-font-style: bold; margin-bottom: -13px;"/>
+    <ui:VisualElement name="CostFade" style="flex-grow: 1; width: 280px; height: 400px; min-height: 40px; max-height: 600px; padding-left: 30px;"/>
 </ui:UXML>
