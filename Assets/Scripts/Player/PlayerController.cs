@@ -79,6 +79,8 @@ public class PlayerController : MonoBehaviour
 
         linearVelocity = rb.linearVelocity;
         angularVelocity = rb.angularVelocity;
+
+        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -15f, 15f);
 	}
 
     void PerformMovement()
@@ -168,7 +170,7 @@ public class PlayerController : MonoBehaviour
         Vector2 direction = transform.position - deliver.position;
 
 		// If player is in the air, invert x direction to keep the player moving forward
-		if (direction.y > 0.3f) direction.x *= -1f;
+		if (direction.y > 0.6f) direction.x *= -1f;
         else
         {
             rb.linearVelocity = Vector2.zero;
