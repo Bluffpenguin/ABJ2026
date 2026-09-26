@@ -25,8 +25,7 @@ public class PlayerController : MonoBehaviour
     [Header("Costs")]
     [SerializeField] int walkCost = 1;
     [SerializeField] int baseJumpCost = 10;
-    [SerializeField] float multiJumpModifier = 2;
-    [SerializeField] int currentJumpCost;
+    //[SerializeField] int jumpCostMultiplier = 2;
     [SerializeField] int currentJumpCount = 0; // Amount of jumps the player has performed before landing
     [SerializeField] float walkCostInterval = 0.25f;
     [SerializeField] float damageInvulnerabilityPeriod = 0.5f;
@@ -143,6 +142,18 @@ public class PlayerController : MonoBehaviour
             invulnerabilityProgress = 0;
         }
     }
+
+    public void ResetPlayer(Vector2 startPosition)
+    {
+		rb.linearVelocity = Vector2.zero;
+		rb.angularVelocity = 0f;
+        intervalProgress = 0;
+        invulnerabilityProgress = 0;
+        currentJumpCount = 0;
+        invulnerable = false;
+
+        transform.position = startPosition;
+	}
 
 	#region Damage Methods
     public void DamageWithForce(float force, Transform deliver, int cost)

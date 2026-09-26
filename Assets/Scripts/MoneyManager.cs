@@ -4,6 +4,10 @@ public class MoneyManager : MonoBehaviour
 {
     public static MoneyManager Instance;
 
+	[SerializeField] int startingMoney = 1000;
+	[SerializeField] int currentMoney = 1000;
+    
+
 	private void Awake()
 	{
 		if (Instance == null)
@@ -17,7 +21,7 @@ public class MoneyManager : MonoBehaviour
         }
 	}
 
-    [SerializeField] int currentMoney = 1000;
+    
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
     {
@@ -30,9 +34,16 @@ public class MoneyManager : MonoBehaviour
         
     }
 
+    public void ResetMoney()
+    {
+        currentMoney = startingMoney;
+    }
+
     public void SubtractMoney(int amount)
     {
         currentMoney -= amount;
+
+        if (currentMoney <= 0) GameManager.Instance.OnLose();
     }
 
     public void AddMoney(int amount)
