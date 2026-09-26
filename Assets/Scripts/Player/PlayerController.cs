@@ -79,6 +79,8 @@ public class PlayerController : MonoBehaviour
 
         linearVelocity = rb.linearVelocity;
         angularVelocity = rb.angularVelocity;
+
+        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -15f, 15f);
 	}
 
     void PerformMovement()

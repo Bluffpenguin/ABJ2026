@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2cab8e7b34a3ce54f9e4afd4034f1118
+guid: e8ad83e1f1303804aa713f26a91e2098
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3338749442709606003
-    second: Coin_0
+      213: -6313965885630515596
+    second: 13 Extreme fore2 plants_0
+  - first:
+      213: 6306301210088022885
+    second: 13 Extreme fore2 plants_1
+  - first:
+      213: 3746898849798351095
+    second: 13 Extreme fore2 plants_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2048
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coin_0
+      name: 13 Extreme fore2 plants_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 827
         y: 0
-        width: 2048
-        height: 2048
+        width: 1770
+        height: 862
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +136,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d81b24142116aa1d0800000000000000
-      internalID: -3338749442709606003
+      spriteID: 476fe07da794068a0800000000000000
+      internalID: -6313965885630515596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13 Extreme fore2 plants_1
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 0
+        width: 1481
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563a9e1d98b748750800000000000000
+      internalID: 6306301210088022885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13 Extreme fore2 plants_2
+      rect:
+        serializedVersion: 2
+        x: 4163
+        y: 0
+        width: 500
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8ec87e6a8aff330800000000000000
+      internalID: 3746898849798351095
       vertices: []
       indices: 
       edges: []
@@ -150,7 +200,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Coin_0: -3338749442709606003
+      13 Extreme fore2 plants_0: -6313965885630515596
+      13 Extreme fore2 plants_1: 6306301210088022885
+      13 Extreme fore2 plants_2: 3746898849798351095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

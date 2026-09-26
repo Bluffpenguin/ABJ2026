@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 3c37787224378574aa354ad4289a10c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5820436131343735758
+    second: 05 Clouds Mid_0
+  - first:
+      213: -2605813684066570988
+    second: 05 Clouds Mid_1
+  - first:
+      213: 8667782833753795365
+    second: 05 Clouds Mid_2
+  - first:
+      213: -7022016417740573031
+    second: 05 Clouds Mid_3
+  - first:
+      213: 8645018592862842598
+    second: 05 Clouds Mid_4
+  - first:
+      213: 5062915935706736906
+    second: 05 Clouds Mid_5
+  - first:
+      213: -2410755084494860166
+    second: 05 Clouds Mid_6
+  - first:
+      213: 6391093708443146550
+    second: 05 Clouds Mid_7
+  - first:
+      213: -4707842364501283455
+    second: 05 Clouds Mid_8
+  - first:
+      213: 8134089961516223238
+    second: 05 Clouds Mid_9
+  - first:
+      213: 1624774374371698148
+    second: 05 Clouds Mid_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 05 Clouds Mid_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1908
+        width: 1069
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb979ec2d756c050800000000000000
+      internalID: 5820436131343735758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_1
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 2242
+        width: 291
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d2c52b24a46dbd0800000000000000
+      internalID: -2605813684066570988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_2
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2043
+        width: 1330
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52baf1c30962a4870800000000000000
+      internalID: 8667782833753795365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_3
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 2251
+        width: 984
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996bc95b549cc8e90800000000000000
+      internalID: -7022016417740573031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_4
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1278
+        width: 784
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeac306b9649f770800000000000000
+      internalID: 8645018592862842598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_5
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1251
+        width: 777
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09e6731837134640800000000000000
+      internalID: 5062915935706736906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_6
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 1484
+        width: 524
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70973cf5074b8ed0800000000000000
+      internalID: -2410755084494860166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1223
+        width: 763
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639dcf9cdd9b1b850800000000000000
+      internalID: 6391093708443146550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_8
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1042
+        width: 711
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18dad5d00526aaeb0800000000000000
+      internalID: -4707842364501283455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_9
+      rect:
+        serializedVersion: 2
+        x: 3454
+        y: 967
+        width: 766
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bce3749b712e070800000000000000
+      internalID: 8134089961516223238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05 Clouds Mid_10
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1018
+        width: 79
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e525906fab5c8610800000000000000
+      internalID: 1624774374371698148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      05 Clouds Mid_0: 5820436131343735758
+      05 Clouds Mid_1: -2605813684066570988
+      05 Clouds Mid_10: 1624774374371698148
+      05 Clouds Mid_2: 8667782833753795365
+      05 Clouds Mid_3: -7022016417740573031
+      05 Clouds Mid_4: 8645018592862842598
+      05 Clouds Mid_5: 5062915935706736906
+      05 Clouds Mid_6: -2410755084494860166
+      05 Clouds Mid_7: 6391093708443146550
+      05 Clouds Mid_8: -4707842364501283455
+      05 Clouds Mid_9: 8134089961516223238
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
