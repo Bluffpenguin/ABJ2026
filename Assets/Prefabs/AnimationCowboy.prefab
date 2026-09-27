@@ -394,7 +394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: a3c397a4f670f7c49b3660c887cf53c2, type: 3}
       propertyPath: m_Name
-      value: Cowboy
+      value: AnimationCowboy
       objectReference: {fileID: 0}
     - target: {fileID: -8034096756747605185, guid: a3c397a4f670f7c49b3660c887cf53c2, type: 3}
       propertyPath: m_LocalRotation.w

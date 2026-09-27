@@ -31,8 +31,6 @@ public class Cowboy : MonoBehaviour
         if (!foundPlayer)
         {
             transform.Translate(patrolSpeed * direction * Time.deltaTime);
-
-            
         }
     }
 
