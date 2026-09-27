@@ -143,3 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9

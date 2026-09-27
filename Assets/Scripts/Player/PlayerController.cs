@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Costs")]
     [SerializeField] int walkCost = 1;
-    [SerializeField] int baseJumpCost = 10;
+    [SerializeField] int baseJumpCost = 5;
     int currentJumpCost;
     [SerializeField] int currentJumpCount = 0; // Amount of jumps the player has performed before landing
     [SerializeField] float walkCostInterval = 0.25f;
@@ -42,7 +42,9 @@ public class PlayerController : MonoBehaviour
 
 	Rigidbody2D rb;
     Animator anim;
-	bool playerCanMove = true;
+
+    [Header("SFX")]
+    [SerializeField] AudioManager.SFXClip jumpSFX;
 
     [Header("For Monitoring")]
     [SerializeField] Vector2 linearVelocity;
@@ -132,6 +134,8 @@ public class PlayerController : MonoBehaviour
 
             currentJumpCost *= 2;
             MoneyManager.Instance.SubtractMoney(currentJumpCost);
+
+            AudioManager.Instance.PlaySFX(jumpSFX);
 		}
 
         
