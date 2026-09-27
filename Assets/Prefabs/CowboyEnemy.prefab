@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2303002140769036873
 Transform:
   m_ObjectHideFlags: 0
@@ -57,9 +57,9 @@ MonoBehaviour:
   collisionCheckDistance: 0.5
   castSize: {x: 1, y: 1}
   collisionOffset: {x: 0, y: 1}
-  attackDelay: 1
+  attackDelay: 2
   bulletSpeed: 2
-  bulletForce: 4
+  bulletForce: 7
   bulletDamage: 50
   bulletSpawnOffset: {x: 0.9, y: 1.13}
 --- !u!58 &2514496200753249295
@@ -233,10 +233,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7231077280805570151, guid: b5c2d157698713d458dc0a21eeef152e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1431058917781084409}
   m_SourcePrefab: {fileID: 100100000, guid: b5c2d157698713d458dc0a21eeef152e, type: 3}
 --- !u!4 &3292671548368109980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8399753909582372356, guid: b5c2d157698713d458dc0a21eeef152e, type: 3}
   m_PrefabInstance: {fileID: 6422134162771107736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4429838370768624127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7231077280805570151, guid: b5c2d157698713d458dc0a21eeef152e, type: 3}
+  m_PrefabInstance: {fileID: 6422134162771107736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1431058917781084409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4429838370768624127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc088aae9cf1c6468c6f164d6ad100b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

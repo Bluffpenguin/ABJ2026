@@ -23,6 +23,7 @@ public class FloorGenerator : MonoBehaviour
         Debug.Log(clones);
         if (collision.CompareTag("Player") && !isDeletingFloors)
         {
+            floor = GameManager.Instance.GetLevel();
             floorNum = floorNum + 1;
             GameObject clone = Instantiate(floor);
             clone.transform.position = new Vector3(transform.position.x + distance, transform.position.y, transform.position.z);

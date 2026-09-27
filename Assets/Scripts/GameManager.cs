@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject optionsMenu;
     [SerializeField] GameObject HUD;
 
+    [SerializeField] List<GameObject> levelPrefabs;
+    Queue<GameObject> levelQueue = new();
+
 	private void Awake()
 	{
         if (Instance != null) Destroy(gameObject);
@@ -44,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void OnLose(Sprite deathScreen)
     {
-        HUD.SetActive(false);
+        //HUD.SetActive(false);
         /*
         if (deathScreenObj != null)
         {
@@ -130,4 +133,38 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 	#endregion
+
+    public GameObject GetLevel()
+    {
+        if (levelQueue.Count == 0)
+        {
+            levelPrefabs.Shuffle();
+            foreach (GameObject level in levelPrefabs)
+            {
+                levelQueue.Enqueue(level);
+            }
+        }
+
+        return levelQueue.Dequeue();
+    }
+
+	
+}
+
+public static class ListExtensions
+{
+	public static void Shuffle<T>(this List<T> list)
+	{
+		// Loop backwards from the last element down to the second element
+		for (int i = list.Count - 1; i > 0; i--)
+		{
+			// Pick a random index from 0 to i (inclusive)
+			int randomIndex = Random.Range(0, i + 1);
+
+			// Swap the element at i with the element at randomIndex
+			T temp = list[i];
+			list[i] = list[randomIndex];
+			list[randomIndex] = temp;
+		}
+	}
 }
