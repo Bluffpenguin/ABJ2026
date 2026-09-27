@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     List<GameObject> coins = new List<GameObject>();
 
     [SerializeField] Transform startingPosition;
+
+    [SerializeField] FloorGenerator floor;
 
 	private void Awake()
 	{
@@ -37,6 +40,7 @@ public class GameManager : MonoBehaviour
     {
         MoneyManager.Instance.ResetMoney();
         PlayerController.Instance.ResetPlayer(startingPosition.position);
+        floor.DeleteFloors();
 
         foreach (GameObject coin in coins)
         {
