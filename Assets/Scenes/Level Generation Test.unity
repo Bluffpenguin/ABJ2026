@@ -1641,11 +1641,11 @@ PrefabInstance:
       objectReference: {fileID: 1537203637}
     - target: {fileID: 4112245958668899231, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.178593
+      value: -8.186162
       objectReference: {fileID: 0}
     - target: {fileID: 4112245958668899231, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1386313
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6785179503568730252, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1697,7 +1697,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7354568343802514149, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_Size.y
-      value: 17.1
+      value: 12.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354568343802514149, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: Damping.y
