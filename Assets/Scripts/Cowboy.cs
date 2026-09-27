@@ -11,12 +11,15 @@ public class Cowboy : MonoBehaviour
 
 	Vector2 direction = Vector2.left;
     Vector2 startingPosition;
-    
 
 
+	private void Awake()
+	{
+        anim = GetComponentInChildren<Animator>();
+	}
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+	void Start()
     {
        startingPosition = transform.position; 
     }
@@ -31,6 +34,7 @@ public class Cowboy : MonoBehaviour
             if (Mathf.Abs(startingPosition.x - transform.position.x) > patrolRange)
             {
                 direction = direction * -1;
+                
             }
         }
     }

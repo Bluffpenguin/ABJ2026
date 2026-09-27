@@ -271,7 +271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   bulletPrefab: {fileID: 0}
-  patrolRange: 0
+  patrolRange: 2
+  patrolSpeed: 3
 --- !u!1 &515685854
 GameObject:
   m_ObjectHideFlags: 0
