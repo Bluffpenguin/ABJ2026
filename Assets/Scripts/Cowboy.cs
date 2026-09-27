@@ -3,6 +3,7 @@ using UnityEngine;
 public class Cowboy : MonoBehaviour
 {
     Animator anim;
+    [SerializeField] Transform animTransform;
     [SerializeField] GameObject bulletPrefab;
     bool foundPlayer = false;
 
@@ -31,11 +32,7 @@ public class Cowboy : MonoBehaviour
         {
             transform.Translate(patrolSpeed * direction * Time.deltaTime);
 
-            if (Mathf.Abs(startingPosition.x - transform.position.x) > patrolRange)
-            {
-                direction = direction * -1;
-                
-            }
+            
         }
     }
 
