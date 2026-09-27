@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &14751131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4429838370768624127, guid: 3f81f4758d5c01d44a7139dce484a6bf, type: 3}
+  m_PrefabInstance: {fileID: 2174818982859163383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &207004308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1418935534216441731, guid: 4f89df5846d985d4b8e3a92d5c4b93cb, type: 3}
@@ -464,6 +469,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f89df5846d985d4b8e3a92d5c4b93cb, type: 3}
+--- !u!114 &852688745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14751131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc088aae9cf1c6468c6f164d6ad100b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &952282008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,10 +1421,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CowboyEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8660304676515866258, guid: 3f81f4758d5c01d44a7139dce484a6bf, type: 3}
+      propertyPath: attackDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660304676515866258, guid: 3f81f4758d5c01d44a7139dce484a6bf, type: 3}
+      propertyPath: bulletForce
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4429838370768624127, guid: 3f81f4758d5c01d44a7139dce484a6bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 852688745}
   m_SourcePrefab: {fileID: 100100000, guid: 3f81f4758d5c01d44a7139dce484a6bf, type: 3}
 --- !u!1001 &2708564406534470583
 PrefabInstance:
