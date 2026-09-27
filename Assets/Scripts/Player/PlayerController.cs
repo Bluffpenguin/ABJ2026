@@ -15,6 +15,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 jumpForce = new Vector2(3, 10);
     [SerializeField] Vector2 jumpDirection = Vector2.up;
     [SerializeField] float jumpCutMultiplier = 0.5f;
+    enum MovementState
+    {
+        Free,
+        Frozen,
+        StuckInSaucer
+    }
+    MovementState currentMovementState = MovementState.Free;
 
     [Header("Ground Detection")]
     [SerializeField] bool grounded;
@@ -65,18 +72,28 @@ public class PlayerController : MonoBehaviour
     {
         if (input_A.WasPressedThisFrame()) performedJump = true;
 
-        //if (input_A.WasReleasedThisFrame() && rb.linearVelocity.y > 0) rb.linearVelocityY *= jumpCutMultiplier; 
+        if (input_A.WasReleasedThisFrame() && rb.linearVelocity.y > 0) rb.linearVelocityY *= jumpCutMultiplier; 
 
 	}
 
 	private void FixedUpdate()
 	{
-        if (!playerCanMove) return;
+        switch(currentMovementState)
+        {
+            case MovementState.Free:
+				CheckForGround();
+				PerformMovement();
+				HandleJump();
+				HandleInvulnerability();
+				break;
+            case MovementState.Frozen:
+                break;
+            case MovementState.StuckInSaucer:
+                break;
+        }
+ 
 
-        CheckForGround();
-        PerformMovement();
-        HandleJump();
-        HandleInvulnerability();
+        
 
         linearVelocity = rb.linearVelocity;
         angularVelocity = rb.angularVelocity;
@@ -158,6 +175,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     public void ResetPlayer(Vector2 startPosition)
     {
 		rb.linearVelocity = Vector2.zero;
@@ -198,6 +216,18 @@ public class PlayerController : MonoBehaviour
 		rb.angularVelocity = 0f;
 		rb.AddForce(force * direction, ForceMode2D.Impulse);
 	}
+
+    public void CaughtBySaucer()
+    {
+        currentMovementState = MovementState.StuckInSaucer;
+		rb.linearVelocity = Vector2.zero;
+		rb.angularVelocity = 0f;
+	}
+
+    public void FreedFromSaucer()
+    {
+        currentMovementState = MovementState.Free;
+    }
 	#endregion
 
 	private void OnDrawGizmosSelected()

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 833b122d465293c48ac1775ca1eb22d5
+guid: 7a22cf1a251ff2d4ead3740d43feb216
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 962894229737122442
-    second: Bill_0
+      213: -3600272194184032969
+    second: 04 Scaffold Floors (Load as Multiple)_0
+  - first:
+      213: -8749500876846666186
+    second: 04 Scaffold Floors (Load as Multiple)_1
+  - first:
+      213: 1933972083952811491
+    second: 04 Scaffold Floors (Load as Multiple)_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2048
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bill_0
+      name: 04 Scaffold Floors (Load as Multiple)_0
       rect:
         serializedVersion: 2
-        x: 266
-        y: 615
-        width: 1515
-        height: 818
+        x: 1954
+        y: 2331
+        width: 1183
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +136,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8a21c74333ec5d00800000000000000
-      internalID: 962894229737122442
+      spriteID: 73dc1f2b383490ec0800000000000000
+      internalID: -3600272194184032969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Scaffold Floors (Load as Multiple)_1
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1300
+        width: 1072
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ee5913f47839680800000000000000
+      internalID: -8749500876846666186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 04 Scaffold Floors (Load as Multiple)_2
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 682
+        width: 1060
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed778d1d59d6da10800000000000000
+      internalID: 1933972083952811491
       vertices: []
       indices: 
       edges: []
@@ -140,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +200,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bill_0: 962894229737122442
+      04 Scaffold Floors (Load as Multiple)_0: -3600272194184032969
+      04 Scaffold Floors (Load as Multiple)_1: -8749500876846666186
+      04 Scaffold Floors (Load as Multiple)_2: 1933972083952811491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
