@@ -25,7 +25,7 @@ public class FloorGenerator : MonoBehaviour
         {
             floorNum = floorNum + 1;
             GameObject clone = Instantiate(floor);
-            clone.transform.position = new Vector3(clone.transform.position.x + distance, clone.transform.position.y, clone.transform.position.z);
+            clone.transform.position = new Vector3(transform.position.x + distance, transform.position.y, transform.position.z);
             GameManager.Instance.AddFloorToList(clone);
         }
     }
