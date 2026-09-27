@@ -28,7 +28,7 @@ public class Cowboy : MonoBehaviour
     
     [SerializeField] Vector2 bulletSpawnOffset = new(0,0);
     GameObject player;
-
+    bool attacking = false;
 
 	private void Awake()
 	{
@@ -53,7 +53,7 @@ public class Cowboy : MonoBehaviour
         {
             delayProgress += Time.deltaTime;
             Vector2 directionToPlayer;
-            if (player.transform.position.x < transform.position.y) directionToPlayer = Vector2.left;
+            if (player.transform.position.x < transform.position.x) directionToPlayer = Vector2.left;
             else directionToPlayer = Vector2.right;
 
             direction = directionToPlayer;
@@ -62,15 +62,17 @@ public class Cowboy : MonoBehaviour
             {
                 // Try to attack
                 //GameObject bullet = Instantiate(bulletPrefab, transform.position + (Vector3)(bulletSpawnOffset * new Vector2(directionToPlayer.x, 1)), Quaternion.identity);
-                TaxBulletPool.instance.SpawnBullet(transform.position + (Vector3)(bulletSpawnOffset * new Vector2(directionToPlayer.x, 1)), directionToPlayer, bulletSpeed, bulletDamage, bulletForce);
+                anim.SetTrigger("Shoot");
+                attacking = true;
                 delayProgress = 0;
             }
+            
         }
     }
 
 	private void FixedUpdate()
 	{
-        if (!foundPlayer)
+        if (!foundPlayer || !attacking)
         {
 			if (Physics2D.BoxCast(transform.position + (Vector3)collisionOffset, castSize, 0, direction, collisionCheckDistance, collisionMask))
 			{
@@ -82,6 +84,17 @@ public class Cowboy : MonoBehaviour
 		}
         
 	}
+
+    public void Shoot()
+    {
+		TaxBulletPool.instance.SpawnBullet(transform.position + (Vector3)(bulletSpawnOffset * new Vector2(direction.x, 1)), direction, bulletSpeed, bulletDamage, bulletForce);
+		delayProgress = 0;
+	}
+
+    public void EndOfAttack()
+    {
+        attacking = false;
+    }
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
