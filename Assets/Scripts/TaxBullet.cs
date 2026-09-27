@@ -30,10 +30,9 @@ public class TaxBullet : MonoBehaviour
         spriteRenderer.transform.rotation = Quaternion.identity;
         lifespanProgress = 0;
     }
-
-	private void OnTriggerEnter2D(Collider2D collision)
+	private void OnCollisionEnter2D(Collision2D collision)
 	{
-        PlayerController.Instance.DamageWithForce(bulletForce, transform, bulletDamage);
-        gameObject.SetActive(false);
+		PlayerController.Instance.DamageWithForce(bulletForce, transform, bulletDamage);
+		gameObject.SetActive(false);
 	}
 }
