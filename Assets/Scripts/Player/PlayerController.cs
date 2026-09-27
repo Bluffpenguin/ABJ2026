@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Costs")]
     [SerializeField] int walkCost = 1;
-    [SerializeField] int baseJumpCost = 5;
+    [SerializeField] int baseJumpCost = 10;
     int currentJumpCost;
     [SerializeField] int currentJumpCount = 0; // Amount of jumps the player has performed before landing
     [SerializeField] float walkCostInterval = 0.25f;
@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
 			currentJumpCount++;
             performedJump = false;
 
-            currentJumpCost *= 2;
+            currentJumpCost += 10;
             MoneyManager.Instance.SubtractMoney(currentJumpCost);
 
             AudioManager.Instance.PlaySFX(jumpSFX);
@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
             if (!grounded)
             {
                 currentJumpCount = 0;
-                currentJumpCost = baseJumpCost;
+                currentJumpCost = 0;
             }
 
             grounded = true;
