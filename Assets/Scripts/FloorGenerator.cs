@@ -11,7 +11,8 @@ public class FloorGenerator : MonoBehaviour
     [SerializeField] float distance = 75f;
 
     List<GameObject> clones = new List<GameObject>();
-    private bool isDeletingFloors = false;
+    bool isDeletingFloors = false;
+    int floorNum;
 
     void Start()
     {
@@ -20,27 +21,13 @@ public class FloorGenerator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(clones);
         if (collision.CompareTag("Player") && !isDeletingFloors)
         {
+            floorNum = floorNum + 1;
             GameObject clone = Instantiate(floor);
             clone.transform.position = new Vector3(clone.transform.position.x + distance, clone.transform.position.y, clone.transform.position.z);
-            clones.Add(clone);
+            GameManager.Instance.AddFloorToList(clone);
         }
-    }
-
-    public void DeleteFloors()
-    {
-        isDeletingFloors = true;
-
-        foreach (GameObject clone in clones)
-        {
-            if (clone != null)
-            {
-                Destroy(clone);
-            }
-        }
-        clones.Clear();
-
-        isDeletingFloors = false;
     }
 }

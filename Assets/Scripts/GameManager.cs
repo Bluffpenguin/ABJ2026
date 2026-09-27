@@ -7,10 +7,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     List<GameObject> coins = new List<GameObject>();
+    List<GameObject> floors = new List<GameObject>();
 
     [SerializeField] Transform startingPosition;
-
-    [SerializeField] FloorGenerator floor;
 
 	private void Awake()
 	{
@@ -40,12 +39,21 @@ public class GameManager : MonoBehaviour
     {
         MoneyManager.Instance.ResetMoney();
         PlayerController.Instance.ResetPlayer(startingPosition.position);
-        floor.DeleteFloors();
 
         foreach (GameObject coin in coins)
         {
             coin.SetActive(true);
         }
+
+        foreach (GameObject floor in floors)
+        {
+            if (floor != null)
+            {
+                Destroy(floor);
+            }
+        }
+
+        floors.Clear();
     }
 
     public void AddCoinToList(GameObject coin)
@@ -56,5 +64,10 @@ public class GameManager : MonoBehaviour
     public void RemoveCoinFromList(GameObject coin)
     {
         coins.Remove(coin);
+    }
+
+    public void AddFloorToList(GameObject coin)
+    {
+        floors.Add(coin);
     }
 }

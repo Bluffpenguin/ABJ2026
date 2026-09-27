@@ -704,6 +704,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3711625592904250537, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 1651752586}
+    - target: {fileID: 3711625592904250537, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 109837319}
@@ -1452,6 +1456,17 @@ Transform:
   - {fileID: 1580483657}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1651752586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4642915671377227564, guid: df352f9c0a8a06943be14cf8975ed1dc, type: 3}
+  m_PrefabInstance: {fileID: 2410600612275382093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e0a7f73b7eba941aa18bff4e774ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
 --- !u!1001 &2017496524
 PrefabInstance:
   m_ObjectHideFlags: 0
