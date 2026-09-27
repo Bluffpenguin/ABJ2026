@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 833b122d465293c48ac1775ca1eb22d5
+guid: 6f1d460ac34c7524c893d95cbb8d8f67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 962894229737122442
-    second: Bill_0
+      213: -8809887236930087018
+    second: 03 Scaffolding Frame Back_0
+  - first:
+      213: 1114915149724297338
+    second: 03 Scaffolding Frame Back_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2048
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bill_0
+      name: 03 Scaffolding Frame Back_0
       rect:
         serializedVersion: 2
-        x: 266
-        y: 615
-        width: 1515
-        height: 818
+        x: 1276
+        y: 318
+        width: 198
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +133,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8a21c74333ec5d00800000000000000
-      internalID: 962894229737122442
+      spriteID: 697d88b1c3efcb580800000000000000
+      internalID: -8809887236930087018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03 Scaffolding Frame Back_1
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 144
+        width: 3515
+        height: 2572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78a40eeb69f87f00800000000000000
+      internalID: 1114915149724297338
       vertices: []
       indices: 
       edges: []
@@ -140,7 +165,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +175,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bill_0: 962894229737122442
+      03 Scaffolding Frame Back_0: -8809887236930087018
+      03 Scaffolding Frame Back_1: 1114915149724297338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
