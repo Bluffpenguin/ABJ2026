@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [Header("Costs")]
     [SerializeField] int walkCost = 1;
     [SerializeField] int baseJumpCost = 10;
-    //[SerializeField] int jumpCostMultiplier = 2;
+    int currentJumpCost;
     [SerializeField] int currentJumpCount = 0; // Amount of jumps the player has performed before landing
     [SerializeField] float walkCostInterval = 0.25f;
     [SerializeField] float damageInvulnerabilityPeriod = 0.5f;
@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
     {
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
+        currentJumpCost = baseJumpCost;
 	}
 
     // Update is called once per frame
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         if (input_A.WasPressedThisFrame()) performedJump = true;
 
-        if (input_A.WasReleasedThisFrame() && rb.linearVelocity.y > 0) rb.linearVelocityY *= jumpCutMultiplier; 
+        //if (input_A.WasReleasedThisFrame() && rb.linearVelocity.y > 0) rb.linearVelocityY *= jumpCutMultiplier; 
 
 	}
 
@@ -107,11 +108,13 @@ public class PlayerController : MonoBehaviour
     {
         if (performedJump)
         {
+            if (!grounded) rb.linearVelocityY = 0;
 			rb.AddForce(jumpDirection * jumpForce, ForceMode2D.Impulse);
 			currentJumpCount++;
             performedJump = false;
 
-            MoneyManager.Instance.SubtractMoney(baseJumpCost * currentJumpCount);
+            currentJumpCost *= 2;
+            MoneyManager.Instance.SubtractMoney(currentJumpCost);
 		}
 
         
@@ -122,7 +125,11 @@ public class PlayerController : MonoBehaviour
         if (Physics2D.Raycast(transform.position, Vector2.down, groundDetectionLength, groundMask))
         {
             // Player is touching the ground
-            if (!grounded) currentJumpCount = 0;
+            if (!grounded)
+            {
+                currentJumpCount = 0;
+                currentJumpCost = baseJumpCost;
+            }
 
             grounded = true;
             anim.SetBool("IsGrounded", true);
@@ -158,6 +165,7 @@ public class PlayerController : MonoBehaviour
         intervalProgress = 0;
         invulnerabilityProgress = 0;
         currentJumpCount = 0;
+        currentJumpCost = baseJumpCost;
         invulnerable = false;
 
         transform.position = startPosition;
@@ -182,6 +190,14 @@ public class PlayerController : MonoBehaviour
         MoneyManager.Instance.SubtractMoney(cost);
         invulnerable = true;
     }
+
+    public void ApplyForce(float force, Transform deliverer)
+    {
+		Vector2 direction = transform.position - deliverer.position;
+		rb.linearVelocity = Vector2.zero;
+		rb.angularVelocity = 0f;
+		rb.AddForce(force * direction, ForceMode2D.Impulse);
+	}
 	#endregion
 
 	private void OnDrawGizmosSelected()

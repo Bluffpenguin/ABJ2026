@@ -34,6 +34,7 @@ public class MoneyManager : MonoBehaviour
     {
         costFadeContainer = uiMoneyPopups.rootVisualElement.Q("CostFade");
         currentMoneyLabel = uiMoneyPopups.rootVisualElement.Q<Label>("Money");
+		currentMoneyLabel.text = "$" + currentMoney;
 
 	}
 
