@@ -3823,6 +3823,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6004055916859295138, guid: 7d7c9a0782423624cb2bbe9aa1ecf772, type: 3}
+      propertyPath: music_mainTheme
+      value: 
+      objectReference: {fileID: 8300000, guid: ebb00176bac0f9e4fb91628fc27a108f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4447,6 +4451,10 @@ PrefabInstance:
       propertyPath: jumpForce.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5736288911370629489, guid: c95ed05f71ccba24994e8bc3bdb35b1d, type: 3}
+      propertyPath: jumpSFX.file
+      value: 
+      objectReference: {fileID: 8300000, guid: 003f77672d70aaa4bad7005f7a03d4b0, type: 3}
     - target: {fileID: 6272900402227452016, guid: c95ed05f71ccba24994e8bc3bdb35b1d, type: 3}
       propertyPath: m_SortingLayer
       value: 3
