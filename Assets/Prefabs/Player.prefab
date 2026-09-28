@@ -209,5 +209,9 @@ MonoBehaviour:
   currentJumpCount: 0
   walkCostInterval: 0.25
   damageInvulnerabilityPeriod: 0.5
+  jumpSFX:
+    file: {fileID: 8300000, guid: 4ceefdc3bd24a634287b9989548aff26, type: 3}
+    upperPitch: 1.05
+    lowerPitch: 0.95
   linearVelocity: {x: 0, y: 0}
   angularVelocity: 0

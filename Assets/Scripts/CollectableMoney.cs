@@ -3,6 +3,7 @@ using UnityEngine;
 public class CollectableMoney : MonoBehaviour
 {
     [SerializeField] int amountToGive = 10;
+	[SerializeField] AudioManager.SFXClip collectSFX;
 
 	private void Start()
 	{
@@ -14,6 +15,7 @@ public class CollectableMoney : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			MoneyManager.Instance.AddMoney(amountToGive);
+			AudioManager.Instance.PlaySFX(collectSFX);
 			gameObject.SetActive(false);
 		}
 	}

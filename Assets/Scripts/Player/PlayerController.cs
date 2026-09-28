@@ -42,7 +42,9 @@ public class PlayerController : MonoBehaviour
 
 	Rigidbody2D rb;
     Animator anim;
-	bool playerCanMove = true;
+
+    [Header("SFX")]
+    [SerializeField] AudioManager.SFXClip jumpSFX;
 
     [Header("For Monitoring")]
     [SerializeField] Vector2 linearVelocity;
@@ -130,8 +132,10 @@ public class PlayerController : MonoBehaviour
 			currentJumpCount++;
             performedJump = false;
 
-            currentJumpCost *= 2;
+            currentJumpCost += 10;
             MoneyManager.Instance.SubtractMoney(currentJumpCost);
+
+            AudioManager.Instance.PlaySFX(jumpSFX);
 		}
 
         
@@ -145,7 +149,7 @@ public class PlayerController : MonoBehaviour
             if (!grounded)
             {
                 currentJumpCount = 0;
-                currentJumpCost = baseJumpCost;
+                currentJumpCost = 0;
             }
 
             grounded = true;

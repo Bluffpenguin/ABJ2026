@@ -16,6 +16,8 @@ public class MoneyManager : MonoBehaviour
     int containerSize = 0;
     int maxContainerSize = 10;
 
+    Sprite lastDamageDeathSprite;
+
 	private void Awake()
 	{
 		if (Instance == null)
@@ -94,14 +96,16 @@ public class MoneyManager : MonoBehaviour
         containerSize = 0;
 	}
 
-    public void SubtractMoney(int amount)
+    public void SubtractMoney(int amount, Sprite deathSprite = null)
     {
         currentMoney -= amount;
 		currentMoneyLabel.text = "$" + currentMoney;
 
 		SpawnPopup(-amount);
 
-        if (currentMoney <= 0) GameManager.Instance.OnLose();
+        lastDamageDeathSprite = deathSprite;
+
+        if (currentMoney <= 0) GameManager.Instance.OnLose(lastDamageDeathSprite);
 
         
     }
