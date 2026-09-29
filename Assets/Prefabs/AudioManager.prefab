@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musicSource: {fileID: 1460561807048944649}
   SFXSource: {fileID: 5620931979540773185}
-  music_mainTheme: {fileID: 8300000, guid: 2d7536a7fda0d1c408e2b8ba56573176, type: 3}
+  music_mainTheme: {fileID: 8300000, guid: ebb00176bac0f9e4fb91628fc27a108f, type: 3}
   sfx_buttonClick:
     file: {fileID: 8300000, guid: f91af66d91cbc504abf1aff06ce18c30, type: 3}
     upperPitch: 1.05
@@ -225,7 +225,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2d7536a7fda0d1c408e2b8ba56573176, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
