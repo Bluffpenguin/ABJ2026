@@ -209,6 +209,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &42766280641945849
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +885,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &339147099666639937
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1007,7 @@ Transform:
   m_GameObject: {fileID: 512303503106194773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.97, y: 11.78, z: 0}
+  m_LocalPosition: {x: 18.97, y: 10.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1055,7 +1063,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5011515551755558978, guid: 8a41fb5096f36cc4682cf0f13a17bff8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2344,7 +2352,7 @@ Transform:
   m_GameObject: {fileID: 1418457218611508519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.36, y: 9.01, z: 0}
+  m_LocalPosition: {x: 21.46, y: 7.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2620,6 +2628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &1518707121948926751
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,8 +3697,8 @@ Transform:
   m_GameObject: {fileID: 2253865105580105354}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.96, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -1.9465, z: 0}
+  m_LocalScale: {x: 1, y: 0.6764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1495113502118889406}
@@ -4431,6 +4443,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &2637716332447903332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4611,6 +4627,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &2773750022401346711
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,6 +5881,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &3780343733554861782
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,6 +6785,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4417093415534290703
 GameObject:
   m_ObjectHideFlags: 0
@@ -9083,6 +9111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &5744570870972341221
 GameObject:
   m_ObjectHideFlags: 0
@@ -10227,6 +10259,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6097560463711489188
 GameObject:
   m_ObjectHideFlags: 0
@@ -10519,6 +10555,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6396565083827042862
 GameObject:
   m_ObjectHideFlags: 0
@@ -11048,6 +11088,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6562635428834592923
 GameObject:
   m_ObjectHideFlags: 0
@@ -11589,6 +11633,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6877242265240017108
 GameObject:
   m_ObjectHideFlags: 0
@@ -11947,6 +11995,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6895250810293942453
 GameObject:
   m_ObjectHideFlags: 0
@@ -13035,6 +13087,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &7583220428665306855
 GameObject:
   m_ObjectHideFlags: 0
@@ -13178,6 +13234,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &7609345432901065403
 GameObject:
   m_ObjectHideFlags: 0
@@ -13321,6 +13381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &7699956192746163097
 GameObject:
   m_ObjectHideFlags: 0
@@ -13836,6 +13900,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &8084970114152502321
 GameObject:
   m_ObjectHideFlags: 0
@@ -15326,6 +15394,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &9032912432619428074
 GameObject:
   m_ObjectHideFlags: 0

@@ -284,7 +284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &108167669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3923,7 +3923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112245958668899231, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6600003
+      value: -0.7999995
       objectReference: {fileID: 0}
     - target: {fileID: 6785179503568730252, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3972,6 +3972,14 @@ PrefabInstance:
     - target: {fileID: 6870004856411469002, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.47526
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354568343802514149, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: m_Size.y
+      value: 20.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354568343802514149, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: m_Offset.y
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: Composition.DeadZone.Size.y
@@ -4652,7 +4660,7 @@ PrefabInstance:
       objectReference: {fileID: 636726794}
     - target: {fileID: 3711625592904250537, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
       propertyPath: levelPrefabs.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3711625592904250537, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
       propertyPath: 'levelPrefabs.Array.data[0]'
@@ -4666,6 +4674,14 @@ PrefabInstance:
       propertyPath: 'levelPrefabs.Array.data[2]'
       value: 
       objectReference: {fileID: 6202763039314360182, guid: 262af5ef48926414b89d3f2512d03a39, type: 3}
+    - target: {fileID: 3711625592904250537, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
+      propertyPath: 'levelPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2105225656541039312, guid: a104183fc87484b43a42e0d1faae0fa1, type: 3}
+    - target: {fileID: 3711625592904250537, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
+      propertyPath: 'levelPrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7415380254938907183, guid: 10270db9306be9248852fe60b1e86471, type: 3}
     - target: {fileID: 8382232748336726677, guid: ac905a92c16300a489cd8c72d413db22, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.26748
