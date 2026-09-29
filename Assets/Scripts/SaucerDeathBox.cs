@@ -6,7 +6,8 @@ public class SaucerDeathBox : MonoBehaviour
 	{
 		if (collision.CompareTag("Player"))
         {
-            // Call death
+			// Call death
+			GameManager.Instance.OnLose();
         }
 	}
 }
