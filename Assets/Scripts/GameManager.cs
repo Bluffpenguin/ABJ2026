@@ -1,7 +1,10 @@
-using UnityEngine;
 using System.Collections.Generic;
+using System.IO;
+using TMPro;
 using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,18 +14,29 @@ public class GameManager : MonoBehaviour
     List<GameObject> floors = new List<GameObject>();
 
     [SerializeField] Transform startingPosition;
-    [SerializeField] Image deathScreenObj;
-    [SerializeField] GameObject deathScreenVid;
-    [SerializeField] GameObject deathScreenButton;
-
+    
     [SerializeField] GameObject player;
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject creditsMenu;
     [SerializeField] GameObject optionsMenu;
-    [SerializeField] GameObject HUD;
 
     [SerializeField] List<GameObject> levelPrefabs;
     Queue<GameObject> levelQueue = new();
+
+    [Header("End Screen")]
+    [SerializeField] VideoPlayer videoPlayer;
+	[SerializeField] Image deathScreenObj;
+	[SerializeField] GameObject deathScreenVid;
+	[SerializeField] GameObject deathScreenButton;
+    [SerializeField] TextMeshProUGUI totalMoneyCollectText;
+
+
+	enum GameState
+    {
+        Menu,
+        Playing
+    }
+    GameState currentGameState = GameState.Menu;
 
 	private void Awake()
 	{
@@ -36,8 +50,11 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.PlayMusic(AudioManager.Instance.music_mainTheme);
         player.SetActive(false);
-        HUD.SetActive(true);
-    }
+
+		// Ensure Source is set to URL programmatically
+		videoPlayer.source = VideoSource.Url;
+
+	}
 
     // Update is called once per frame
     void Update()
@@ -45,9 +62,20 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void OnLose(Sprite deathScreen)
+	private void FixedUpdate()
+	{
+        
+		if (currentGameState == GameState.Playing)
+        {
+            if (player.transform.position.y > 15)
+            {
+                OnLose("Sky Death.mp4");
+            }
+        }
+	}
+
+	public void OnLose(string loseScreen = null)
     {
-        //HUD.SetActive(false);
         /*
         if (deathScreenObj != null)
         {
@@ -57,19 +85,35 @@ public class GameManager : MonoBehaviour
         else
             deathScreenVid.SetActive(true);
         */
+        currentGameState = GameState.Menu;
+        totalMoneyCollectText.text = "$" + MoneyManager.Instance.GetTotalMoney();
+        player.SetActive(false);
         deathScreenVid.SetActive(true);
 
         deathScreenButton.SetActive(true);
+        MoneyManager.Instance.DisableUI();
+        if (loseScreen != null) { PlayLoseVideo(loseScreen); }
+        else PlayLoseVideo("OilDeath.mp4");
+	}
 
+    void PlayLoseVideo(string loseScreen)
+    {
+		// Safely combine the streaming assets root path with the file name
+		string fullPath = Path.Combine(Application.streamingAssetsPath, loseScreen);
+
+		videoPlayer.url = fullPath;
+		videoPlayer.Play();
 	}
 
     public void ResetWorld()
     {
-        HUD.SetActive(true );
+        //HUD.SetActive(true );
 		deathScreenObj.gameObject.SetActive(false);
         deathScreenVid.gameObject.SetActive(false);
         deathScreenButton.SetActive(false);
 		MoneyManager.Instance.ResetMoney();
+        MoneyManager.Instance.EnableUI();
+        player.SetActive(true);
         PlayerController.Instance.ResetPlayer(startingPosition.position);
 
         foreach (GameObject coin in coins)
@@ -86,6 +130,8 @@ public class GameManager : MonoBehaviour
         }
 
         floors.Clear();
+        currentGameState = GameState.Playing;
+        
     }
 
     public void AddCoinToList(GameObject coin)
@@ -108,7 +154,8 @@ public class GameManager : MonoBehaviour
     {
         mainMenu.SetActive(false);
         player.SetActive(true);
-        HUD.SetActive(true);
+        currentGameState = GameState.Playing;
+        MoneyManager.Instance.EnableUI();
     }
 
     public void OptionsButton()

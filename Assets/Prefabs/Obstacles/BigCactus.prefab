@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   force: 7
-  cost: 100
+  cost: 60
 --- !u!60 &6452452212461685930
 PolygonCollider2D:
   m_ObjectHideFlags: 0
