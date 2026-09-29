@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -20,6 +21,14 @@ public class MoneyManager : MonoBehaviour
 
     Sprite lastDamageDeathSprite;
 
+    [Header("Popup Numbers")]
+    [SerializeField] List<PopupNumber> popupNumbers = new List<PopupNumber>();
+    Queue<PopupNumber> popUpQueue = new Queue<PopupNumber>();
+    [SerializeField] float basePopupSize = 0.4f;
+    [SerializeField] float popupSizeIncrementAmount = 0.05f;
+    [SerializeField] int popupSizeIncrementThreshold = 25;
+
+
 	private void Awake()
 	{
 		if (Instance == null)
@@ -30,6 +39,11 @@ public class MoneyManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+        
+        foreach (PopupNumber number in popupNumbers)
+        {
+            popUpQueue.Enqueue(number);
         }
 	}
 
@@ -94,6 +108,23 @@ public class MoneyManager : MonoBehaviour
 
 	}
 
+    void SpawnWorldPopup(int cost, Vector3 position)
+    {
+        if (popUpQueue.Count <= 0)
+        {
+            foreach (PopupNumber popup in popupNumbers)
+            {
+                popUpQueue.Enqueue(popup);
+            }
+        }
+        PopupNumber popUp = popUpQueue.Dequeue();
+        float textSize = basePopupSize + (popupSizeIncrementAmount * (Mathf.Abs(cost) / popupSizeIncrementThreshold));
+
+        popUp.transform.position = position;
+        popUp.gameObject.SetActive(true);
+        popUp.SetText(cost, textSize);
+    }
+
     public void ResetMoney()
     {
         currentMoney = startingMoney;
@@ -101,15 +132,19 @@ public class MoneyManager : MonoBehaviour
         costFadeContainer.Clear();
         containerSize = 0;
         totalMoneyCollected = startingMoney;
+        foreach (PopupNumber popUp in popupNumbers)
+        {
+            popUp.gameObject.SetActive(false);
+        }
         
 	}
 
-    public void SubtractMoney(int amount, Sprite deathSprite = null)
+    public void SubtractMoney(int amount, Vector3 popUpPosition, Sprite deathSprite = null)
     {
         currentMoney -= amount;
 		currentMoneyLabel.text = "$" + currentMoney;
 
-		SpawnPopup(-amount);
+		SpawnWorldPopup(-amount, popUpPosition);
 
         lastDamageDeathSprite = deathSprite;
 
@@ -118,12 +153,12 @@ public class MoneyManager : MonoBehaviour
         
     }
 
-    public void AddMoney(int amount)
+    public void AddMoney(int amount, Vector3 popUpPosition)
     {
         currentMoney += amount;
 		currentMoneyLabel.text = "$" + currentMoney;
         totalMoneyCollected += amount;
-		SpawnPopup(amount);
+		SpawnWorldPopup(amount, popUpPosition);
     }
 
     public void EnableUI() { moneyContainer.style.visibility = Visibility.Visible; }

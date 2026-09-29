@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 	Rigidbody2D rb;
     Animator anim;
 
+    [SerializeField] Transform popUpPosition;
+
     [Header("SFX")]
     [SerializeField] AudioManager.SFXClip jumpSFX;
 
@@ -114,7 +116,7 @@ public class PlayerController : MonoBehaviour
             intervalProgress += Time.fixedDeltaTime;
             if (intervalProgress >= walkCostInterval)
             {
-				MoneyManager.Instance.SubtractMoney(walkCost);
+				MoneyManager.Instance.SubtractMoney(walkCost, popUpPosition.position);
                 intervalProgress = 0;
 			}
             
@@ -133,7 +135,7 @@ public class PlayerController : MonoBehaviour
             performedJump = false;
 
             currentJumpCost += 10;
-            MoneyManager.Instance.SubtractMoney(currentJumpCost);
+            MoneyManager.Instance.SubtractMoney(currentJumpCost, popUpPosition.position);
 
             AudioManager.Instance.PlaySFX(jumpSFX);
 		}
@@ -194,11 +196,11 @@ public class PlayerController : MonoBehaviour
 	}
 
 	#region Damage Methods
-    public void DamageWithForce(float force, Transform deliver, int cost)
+    public void DamageWithForce(float force, Transform deliverer, int cost)
     {
         if (invulnerable) return;
 
-        Vector2 direction = transform.position - deliver.position;
+        Vector2 direction = transform.position - deliverer.position;
 
 		// If player is in the air, invert x direction to keep the player moving forward
 		if (direction.y > 0.6f) direction.x *= -1f;
@@ -209,7 +211,7 @@ public class PlayerController : MonoBehaviour
         }
 
         rb.AddForce(force * direction, ForceMode2D.Impulse);
-        MoneyManager.Instance.SubtractMoney(cost);
+        MoneyManager.Instance.SubtractMoney(cost, deliverer.position);
         invulnerable = true;
     }
 
