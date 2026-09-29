@@ -8,10 +8,12 @@ public class MoneyManager : MonoBehaviour
 
 	[SerializeField] int startingMoney = 1000;
 	[SerializeField] int currentMoney = 1000;
+    int totalMoneyCollected = 0;
 
     public VisualTreeAsset template;
     [SerializeField] UIDocument uiMoneyPopups;
     VisualElement costFadeContainer;
+    VisualElement moneyContainer;
     Label currentMoneyLabel;
     int containerSize = 0;
     int maxContainerSize = 10;
@@ -35,9 +37,13 @@ public class MoneyManager : MonoBehaviour
 	void Start()
     {
         costFadeContainer = uiMoneyPopups.rootVisualElement.Q("CostFade");
-        currentMoneyLabel = uiMoneyPopups.rootVisualElement.Q<Label>("Money");
+        moneyContainer = uiMoneyPopups.rootVisualElement.Q("Money");
+        currentMoneyLabel = uiMoneyPopups.rootVisualElement.Q<Label>("MoneyTotal");
 		currentMoneyLabel.text = "$" + currentMoney;
 
+        moneyContainer.style.visibility = Visibility.Hidden;
+
+        totalMoneyCollected = startingMoney;
 	}
 
     // Update is called once per frame
@@ -94,6 +100,8 @@ public class MoneyManager : MonoBehaviour
 		currentMoneyLabel.text = "$" + currentMoney;
         costFadeContainer.Clear();
         containerSize = 0;
+        totalMoneyCollected = startingMoney;
+        
 	}
 
     public void SubtractMoney(int amount, Sprite deathSprite = null)
@@ -105,7 +113,7 @@ public class MoneyManager : MonoBehaviour
 
         lastDamageDeathSprite = deathSprite;
 
-        if (currentMoney <= 0) GameManager.Instance.OnLose(lastDamageDeathSprite);
+        if (currentMoney <= 0) GameManager.Instance.OnLose();
 
         
     }
@@ -114,7 +122,12 @@ public class MoneyManager : MonoBehaviour
     {
         currentMoney += amount;
 		currentMoneyLabel.text = "$" + currentMoney;
-
+        totalMoneyCollected += amount;
 		SpawnPopup(amount);
     }
+
+    public void EnableUI() { moneyContainer.style.visibility = Visibility.Visible; }
+	public void DisableUI() { moneyContainer.style.visibility = Visibility.Hidden; }
+
+    public int GetTotalMoney() { return totalMoneyCollected; }
 }

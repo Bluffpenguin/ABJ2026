@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   force: 3
-  cost: 100
+  cost: 25
 --- !u!61 &6330813880647129778
 BoxCollider2D:
   m_ObjectHideFlags: 0
