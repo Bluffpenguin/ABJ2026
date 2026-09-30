@@ -448,9 +448,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &671673872365271333
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,9 +854,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 25
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.9
+    lowerPitch: 0.75
 --- !u!1 &811709606243493853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,9 +1001,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &929500860520397770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,9 +1180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 25
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.9
+    lowerPitch: 0.75
 --- !u!1 &1050661483294645755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,9 +1419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &1521755352610182504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,9 +2278,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &2421920732012069813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,9 +2582,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 200
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.75
+    lowerPitch: 0.6
 --- !u!1 &2544215327868438028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,9 +2760,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &2639506035834378507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,9 +2907,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 25
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.9
+    lowerPitch: 0.75
 --- !u!1 &2711507221174626530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,9 +3146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &3078016640112769022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3293,9 +3293,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &3082996458567127124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,9 +4265,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &3818172494228400711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,9 +4538,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &3990391430878733540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,9 +4685,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 25
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.9
+    lowerPitch: 0.75
 --- !u!1 &4009429715862340061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,9 +4986,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &4097508152241957826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5133,9 +5133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &4109687244814576019
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,9 +5378,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &4157348981670665899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5649,9 +5649,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 25
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.9
+    lowerPitch: 0.75
 --- !u!1 &4779308156259591244
 GameObject:
   m_ObjectHideFlags: 0
@@ -5796,9 +5796,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &4892157421784826919
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,9 +6229,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &5023390657690792226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6608,9 +6608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &5244314685623133044
 GameObject:
   m_ObjectHideFlags: 0
@@ -7486,9 +7486,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &6128905238107609856
 GameObject:
   m_ObjectHideFlags: 0
@@ -7633,9 +7633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 200
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 0.75
+    lowerPitch: 0.6
 --- !u!1 &6182577751158722715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7893,9 +7893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &6297523201832792962
 GameObject:
   m_ObjectHideFlags: 0
@@ -8040,9 +8040,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &6418924617277909841
 GameObject:
   m_ObjectHideFlags: 0
@@ -9221,9 +9221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &7226241377258682338
 GameObject:
   m_ObjectHideFlags: 0
@@ -9580,9 +9580,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &7778534528541729942
 GameObject:
   m_ObjectHideFlags: 0
@@ -9988,9 +9988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &8176885597908792936
 GameObject:
   m_ObjectHideFlags: 0
@@ -10656,9 +10656,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1 &8860098532624411629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10897,9 +10897,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   amountToGive: 5
   collectSFX:
-    file: {fileID: 0}
-    upperPitch: 0
-    lowerPitch: 0
+    file: {fileID: 8300000, guid: d1dd3ea658a58614ea67adc40b843ca4, type: 3}
+    upperPitch: 1.1
+    lowerPitch: 0.9
 --- !u!1001 &1220635461437760417
 PrefabInstance:
   m_ObjectHideFlags: 0
