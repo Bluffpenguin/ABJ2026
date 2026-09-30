@@ -539,6 +539,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &671673872365271333
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +945,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &811709606243493853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1092,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &929500860520397770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &1050661483294645755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2222,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &2421920732012069813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,6 +2526,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 200
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &2544215327868438028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,6 +2784,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &2639506035834378507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,6 +2931,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &2711507221174626530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,6 +3170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &3078016640112769022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3281,6 +3317,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &3082996458567127124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4006,7 +4046,7 @@ Transform:
   m_GameObject: {fileID: 3430433205907342111}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.606368, y: 3.65026, z: -0.259}
+  m_LocalPosition: {x: 4.606368, y: 4.4026, z: -0.259}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4375,6 +4415,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &3990391430878733540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,6 +4562,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4009429715862340061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,6 +4863,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4097508152241957826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4958,6 +5010,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4109687244814576019
 GameObject:
   m_ObjectHideFlags: 0
@@ -5199,6 +5255,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4157348981670665899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5466,6 +5526,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 25
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4779308156259591244
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,6 +5673,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &4892157421784826919
 GameObject:
   m_ObjectHideFlags: 0
@@ -6038,6 +6106,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &5023390657690792226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6413,6 +6485,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &5244314685623133044
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,6 +7363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6128905238107609856
 GameObject:
   m_ObjectHideFlags: 0
@@ -7430,6 +7510,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 200
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6182577751158722715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7441,6 +7525,7 @@ GameObject:
   - component: {fileID: 4973368589907642616}
   - component: {fileID: 5953659223472151290}
   - component: {fileID: 9136703135771374817}
+  - component: {fileID: 3017862835179384885}
   m_Layer: 0
   m_Name: AnimationCowboy
   m_TagString: Untagged
@@ -7530,6 +7615,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3017862835179384885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6182577751158722715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc088aae9cf1c6468c6f164d6ad100b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CowboyShotCaller
 --- !u!1 &6246394005162189614
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,6 +7770,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6297523201832792962
 GameObject:
   m_ObjectHideFlags: 0
@@ -7816,6 +7917,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &6418924617277909841
 GameObject:
   m_ObjectHideFlags: 0
@@ -9205,6 +9310,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &7778534528541729942
 GameObject:
   m_ObjectHideFlags: 0
@@ -9730,7 +9839,7 @@ Transform:
   m_GameObject: {fileID: 8288860039145808809}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 77.359146, y: 0.97134876, z: 0}
+  m_LocalPosition: {x: 74.98, y: 1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10127,6 +10236,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1 &8860098532624411629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10456,6 +10569,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   amountToGive: 5
+  collectSFX:
+    file: {fileID: 0}
+    upperPitch: 0
+    lowerPitch: 0
 --- !u!1001 &1220635461437760417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10714,11 +10831,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6989869343446114651, guid: 37d449db93d219044bc14efc2fecf079, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.500496
+      value: 35.83
       objectReference: {fileID: 0}
     - target: {fileID: 6989869343446114651, guid: 37d449db93d219044bc14efc2fecf079, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4572406
+      value: 2.62
       objectReference: {fileID: 0}
     - target: {fileID: 6989869343446114651, guid: 37d449db93d219044bc14efc2fecf079, type: 3}
       propertyPath: m_LocalPosition.z
