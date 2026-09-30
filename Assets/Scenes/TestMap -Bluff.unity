@@ -6348,7 +6348,7 @@ PrefabInstance:
       objectReference: {fileID: 8690339277516364033}
     - target: {fileID: 4112245958668899231, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.868748
+      value: 22.244953
       objectReference: {fileID: 0}
     - target: {fileID: 4112245958668899231, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6396,11 +6396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870004856411469002, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.87376
+      value: 22.243063
       objectReference: {fileID: 0}
     - target: {fileID: 6870004856411469002, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.47526
+      value: -5.964101
       objectReference: {fileID: 0}
     - target: {fileID: 7354568343802514149, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_Size.y
@@ -6411,8 +6411,28 @@ PrefabInstance:
       value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: Damping.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: Lookahead.Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: Composition.DeadZone.Size.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: Composition.DeadZone.Size.y
-      value: 0.16
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: Composition.ScreenPosition.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076301219986157519, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
+      propertyPath: Composition.ScreenPosition.y
+      value: -0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
