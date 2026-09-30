@@ -15,7 +15,7 @@ public class CollectableMoney : MonoBehaviour
 		if (collision.CompareTag("Player"))
 		{
 			MoneyManager.Instance.AddMoney(amountToGive, transform.position);
-			AudioManager.Instance.PlaySFX(collectSFX);
+			AudioManager.Instance.PlaySFX(collectSFX, AudioManager.Instance.coinVolume);
 			gameObject.SetActive(false);
 		}
 	}

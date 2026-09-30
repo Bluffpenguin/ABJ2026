@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
             currentJumpCost += 10;
             MoneyManager.Instance.SubtractMoney(currentJumpCost, popUpPosition.position);
 
-            AudioManager.Instance.PlaySFX(jumpSFX);
+            AudioManager.Instance.PlaySFX(jumpSFX, AudioManager.Instance.jumpVolume);
 		}
 
         

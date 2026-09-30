@@ -19,7 +19,11 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Clips")]
     public AudioClip music_mainTheme;
     public SFXClip sfx_buttonClick;
-    
+
+    [Header("SFX Volumes")]
+    public float jumpVolume = 0.45f;
+    public float coinVolume = 0.3f;
+
 
 	private void Awake()
 	{
@@ -54,11 +58,11 @@ public class AudioManager : MonoBehaviour
         musicSource.Stop();
     }
 
-    public void PlaySFX(SFXClip clip)
+    public void PlaySFX(SFXClip clip, float volume = 1f)
     {
         if (SFXSource == null || clip.file == null) return;
 
         SFXSource.pitch = Random.Range(clip.lowerPitch, clip.upperPitch);
-        SFXSource.PlayOneShot(clip.file);
+        SFXSource.PlayOneShot(clip.file, volume);
     }
 }
