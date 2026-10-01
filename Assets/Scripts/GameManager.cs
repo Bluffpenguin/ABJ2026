@@ -130,6 +130,13 @@ public class GameManager : MonoBehaviour
         }
 
         floors.Clear();
+
+        // Reset generator for next run.
+        foreach (FloorGenerator generator in FindObjectsByType<FloorGenerator>(FindObjectsSortMode.None))
+        {
+            generator.ResetGenerator();
+        }
+
         currentGameState = GameState.Playing;
         
     }
