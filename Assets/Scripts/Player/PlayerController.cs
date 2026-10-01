@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
 			}
             
 		}
-        else rb.AddForce(moveDirection * moveForce / 5, ForceMode2D.Force); // Slight force to get past obstacles
+        else rb.AddForce(moveDirection * moveForce * 0.5f, ForceMode2D.Force); // Slight force to get past obstacles
 
 	}
 
