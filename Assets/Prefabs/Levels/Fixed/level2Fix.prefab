@@ -1269,7 +1269,7 @@ Transform:
   m_GameObject: {fileID: 2156592767161353513}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.8, y: -1.36, z: -0.0018510818}
+  m_LocalPosition: {x: 53.47, y: -0.59, z: -0.0018510818}
   m_LocalScale: {x: 0.81439, y: 0.81439, z: 0.81439}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
   floor: {fileID: 1506628110358194614}
-  distance: 90
+  distance: 105
 --- !u!1 &2570774218795605990
 GameObject:
   m_ObjectHideFlags: 0
