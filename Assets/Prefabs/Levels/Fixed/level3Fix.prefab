@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
   floor: {fileID: 6202763039314360182}
-  distance: 81.5856
+  distance: 90
 --- !u!1 &3369838380311838427
 GameObject:
   m_ObjectHideFlags: 0

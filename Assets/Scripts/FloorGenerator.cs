@@ -7,7 +7,7 @@ using UnityEngine;
 public class FloorGenerator : MonoBehaviour
 {
     [SerializeField] GameObject floor;
-    [SerializeField] float distance = 75f;
+    [SerializeField] float distance = 85f;
 
     List<GameObject> clones = new List<GameObject>();
     bool isDeletingFloors = false;

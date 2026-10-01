@@ -6352,7 +6352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112245958668899231, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.42499948
+      value: -0.05499959
       objectReference: {fileID: 0}
     - target: {fileID: 6785179503568730252, guid: 7660325b09e4b114d8af7db58ea74af3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7275,7 +7275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
   floor: {fileID: 8275726774669694556, guid: df352f9c0a8a06943be14cf8975ed1dc, type: 3}
-  distance: 81.5856
+  distance: 90
 --- !u!212 &1050748665368993331
 SpriteRenderer:
   serializedVersion: 3
